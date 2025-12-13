@@ -62,7 +62,7 @@ def main(rank, world_size, port, seed, args):
     model_link = "kykim/gpt3-kor-small_based_on_gpt2" # 'skt/kogpt2-base-v2' #'beomi/kcbert-base'
 
     if rank==0:
-        WANDB_AUTH_KEY = 'df1bca81589e9de3f6b797bf9af026b4d175e284'
+        WANDB_AUTH_KEY = 'your_key'
         wandb.login(key=WANDB_AUTH_KEY)
         wandb.init(project=project_name)
         wandb.run.name = model_name
